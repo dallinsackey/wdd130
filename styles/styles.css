@@ -2,6 +2,20 @@ main {
     max-width: 840px;
 }
 
+nav {
+    border: 1px solid black;
+    padding: 12px;
+    margin: 1rem;
+    line-height: 10px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+nav h1{
+    color: black;
+    font-style: sans-serif;
+}
+
 aside {
     width: 300px;
     margin: 1rem;
