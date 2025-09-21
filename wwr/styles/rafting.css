@@ -1,0 +1,111 @@
+:root {
+    --rafting-color-primary: #0077b6;
+    --rafting-color-dark-secondary: #023e8a;
+    --rafting-color-light-highlights: #90e0ef;
+    --rafting-font-family: 'Arial', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--rafting-font-family);
+    color: var(--rafting-color-dark-secondary);
+}
+
+header,  main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+h1, h2 {
+    font-family: var(--rafting-font-family);
+    color: var(--rafting-color-dark-secondary);
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    /* make hero taller to match the reference image */
+    min-height: 360px;
+    overflow: hidden;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* crop to fill area like the reference */
+}
+h1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 18px 0;
+    text-align: center;
+    background-color: rgba(0, 119, 182, 0.85); /* semi-opaque bar that cuts across */
+    color: #fff;
+    box-shadow: 0 6px 18px rgba(2, 62, 138, 0.35);
+    font-size: 1.6rem;
+}
+.hero article img{
+    float: right;
+    width: 120px;
+    max-width: 30%;
+    border: 8px solid var(--rafting-color-light-highlights);
+    box-shadow: 12px 12px 24px rgba(0,0,0,0.35);
+    margin: 0 0 18px 18px;
+    border-radius: 4px;
+}
+
+article img{
+    float: right;
+    width: 220px;
+    max-width: 36%;
+    margin: 0 0 18px 18px;
+    border-radius: 4px;
+}
+
+/* overlay layer to darken the image for text contrast */
+.hero::after{
+    content: "";
+    position: absolute;
+    inset: 0; /* top:0; right:0; bottom:0; left:0; */
+    background: linear-gradient(rgba(0,0,0,0.18), rgba(0,0,0,0.2));
+    pointer-events: none;
+}
+
+/* responsive adjustments */
+@media (max-width: 900px){
+    header, main, footer { width: 100%; padding: 0 12px; }
+    .hero { min-height: 260px; }
+    h1{ font-size: 1.2rem; padding: 12px 0; }
+    .hero article img{ width: 100px; max-width: 36%; }
+}
+
+/* Utility to create the same "cut-across" bar for other headings */
+.cut-across{
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+    background-color: rgba(0, 119, 182, 0.85);
+    color: #fff;
+    box-shadow: 0 6px 18px rgba(2, 62, 138, 0.25);
+    margin: 16px 0;
+}
+
+@media (max-width: 900px){
+    .cut-across{ font-size: 1rem; padding: 10px 0; }
+}
