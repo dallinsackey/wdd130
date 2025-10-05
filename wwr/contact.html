@@ -41,7 +41,6 @@
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.095746807208!2d-122.41941508468159!3d37.77492977975996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c3d6b3c7b%3A0x4c4f75d42f0b1d98!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1752506964152"
               width="100%"
               height="300"
-              style="border: 0"
               allowfullscreen=""
               loading="lazy"
             ></iframe>
@@ -60,28 +59,41 @@
 
             <fieldset>
               <legend>Purpose of your message:</legend>
-              <label
-                ><input type="radio" name="purpose" value="general" required />
-                General Inquiry</label
-              >
-              <label
-                ><input type="radio" name="purpose" value="reservation" />
-                Reservation Question</label
-              >
-              <label
-                ><input type="radio" name="purpose" value="website" /> Website
-                Suggestion</label
-              >
+              <input
+                type="radio"
+                id="purpose-general"
+                name="purpose"
+                value="general"
+                required
+              />
+              <label for="purpose-general">General Inquiry</label>
+
+              <input
+                type="radio"
+                id="purpose-reservation"
+                name="purpose"
+                value="reservation"
+              />
+              <label for="purpose-reservation">Reservation Question</label>
+
+              <input
+                type="radio"
+                id="purpose-website"
+                name="purpose"
+                value="website"
+              />
+              <label for="purpose-website">Website Suggestion</label>
             </fieldset>
 
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
-            <label>
-              <input type="checkbox" name="subscribe" /> Please subscribe me to
-              the monthly newsletter
-            </label>
-            <button type="submit">Submit</button>
+            <input type="checkbox" id="subscribe" name="subscribe" />
+            <label for="subscribe"
+              >Please subscribe me to the monthly newsletter</label
+            >
+
+            <button type="submit" id="submit">Submit</button>
           </form>
         </section>
       </div>
@@ -90,15 +102,15 @@
       <section class="employees">
         <h2 class="employees-heading">We Are Here to Serve You</h2>
         <div class="employee">
-          <img src="images/employee1.jpg" alt="Guide Jane" />
+          <img src="images/employeeee.jpeg" alt="Guide Jane" />
           <p><strong>Jane Doe - Guide</strong></p>
         </div>
         <div class="employee">
-          <img src="images/employee2.jpg" alt="Guide John" />
+          <img src="images/employee.jpeg" alt="Guide John" />
           <p><strong>John Smith - Guide</strong></p>
         </div>
         <div class="employee">
-          <img src="images/employee3.jpg" alt="Manager Alice" />
+          <img src="images/employee3.jpeg" alt="Manager Alice" />
           <p><strong>Alice Johnson - Manager</strong></p>
         </div>
       </section>

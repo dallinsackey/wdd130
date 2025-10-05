@@ -24,7 +24,10 @@ h1, h2 {
     font-family: var(--rafting-font-family);
     color: var(--rafting-color-dark-secondary);
 }
-
+button[type="submit"]:hover{
+    background: var(--rafting-color-light-highlights);
+    color: #002244;
+}
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
@@ -230,10 +233,10 @@ body.contact-page .contact-form label{ font-weight:600; }
 body.contact-page .contact-form input[type="text"], body.contact-page .contact-form input[type="email"], body.contact-page .contact-form textarea{ padding:8px; border:1px solid #cfcfcf; border-radius:4px; width:100%; }
 body.contact-page .contact-form button{ background:#fff; border:1px solid #333; padding:10px; border-radius:6px; cursor:pointer; }
 
-body.contact-page .employees{ margin: 12px 0; padding: 6px 12px; border: 1px solid rgba(0,0,0,0.08); background: rgba(155,89,182,0.03); width: 100%; max-width: none; border-radius:6px; height:110px; display:grid; grid-template-columns: repeat(3, 1fr); gap: 8px; align-items:center; overflow:hidden; box-sizing: border-box; }
-body.contact-page .employees h2{ text-align:center; margin:4px 0; font-size:0.95rem; }
-body.contact-page .employee{ text-align:center; padding:4px 6px; font-size:0.88rem; }
-body.contact-page .employee img{ width:48px; height:48px; object-fit:cover; border-radius:6px; background:#eee; display:block; margin: 0 auto 4px; }
+body.contact-page .employees{ margin: 12px 0; padding: 8px 12px; border: 1px solid rgba(0,0,0,0.08); background: rgba(155,89,182,0.03); width: 100%; max-width: none; border-radius:6px; display:grid; grid-template-columns: repeat(3, 1fr); gap: 12px; align-items:start; box-sizing: border-box; }
+body.contact-page .employees h2{ text-align:center; margin:4px 0 8px; font-size:1rem; }
+body.contact-page .employee{ text-align:center; padding:6px 8px; font-size:0.92rem; }
+body.contact-page .employee img{ width:56px; height:56px; object-fit:cover; border-radius:6px; background:#eee; display:block; margin: 0 auto 8px; }
 body.contact-page .employees-heading{ grid-column: 1 / -1; text-align: center; font-size: 1.1rem; padding: 6px 0 8px; margin: 0; }
 
 /* scoped full-bleed footer for contact page */
