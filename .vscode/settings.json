@@ -7,7 +7,7 @@
   "editor.formatOnPaste": true,
   "editor.defaultFormatter": "vscode.html-language-features",
   "editor.minimap.enabled": false,
-  
+
   // Git settings for beginners - simplify source control
   "git.enableSmartCommit": true, // automatically staged
   "git.confirmSync": false,
@@ -15,7 +15,7 @@
   // "git.postCommitCommand": "sync",
   "scm.defaultViewMode": "list",
   "scm.repositories.visible": 0,
-  
+
   // Explorer settings - show only folders view
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
@@ -26,9 +26,10 @@
   "outline.showFiles": false,
   "timeline.showView": false,
   "explorer.autoOpenDroppedFile": false,
-  
+
   // Live and Live/Five Server settings
   "fiveServer.port": 5501,
   "fiveServer.injectBody": false,
-  "liveServer.settings.port": 5503
+  "liveServer.settings.port": 5503,
+  "cSpell.words": ["useremail"]
 }
